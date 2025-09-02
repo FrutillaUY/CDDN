@@ -117,3 +117,78 @@ nav a:hover {
     align-items: flex-start;
     color: #7effff;
 }
+/* Estilos para la sección de horarios */
+.horarios-btn-container {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.horarios-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.horario-card {
+    background-color: #5a5a5a;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 280px;
+    color: white;
+    font-size: 14px;
+}
+
+.horario-card h3 {
+    color: #00eaea;
+    font-size: 16px;
+    margin: 0 0 8px 0;
+    border-bottom: 2px solid #00eaea;
+    padding-bottom: 5px;
+}
+
+.horario-card p {
+    margin: 4px 0;
+    font-weight: 500;
+}
+
+.horario-card .time {
+    font-size: 13px;
+    color: #cccccc;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-out {
+    animation: fadeOut 0.5s ease-out forwards;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+main {
+    flex: 1;
+    position: relative;
+    transition: all 0.3s ease;
+}
