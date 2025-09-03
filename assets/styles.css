@@ -77,91 +77,6 @@ transform: scale(1.05);
 box-shadow: 0 0 10px #00c9c9;
 }
 
-.horarios-contenido {
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 25px;
-}
-
-.horarios-btn img {
-width: 250px;
-border-radius: 8px;
-}
-
-.horario-card {
-background-color: #b3b3b3;
-padding: 20px 40px;
-border-radius: 8px;
-text-align: center;
-max-width: 300px;
-color: white;
-font-size: 16px;
-position: relative;
-}
-
-.horario-card h2 {
-color: #00eaea;
-font-size: 20px;
-margin-bottom: 10px;
-border-bottom: 2px solid #00eaea;
-padding-bottom: 5px;
-}
-
-nav a:hover {
-    background-color: #19a3a5;
-    transition: background-color 0.3s ease;
-}
-
-.btn {
-    align-items: flex-start;
-    color: #7effff;
-}
-/* Estilos para la sección de horarios */
-.horarios-btn-container {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-}
-
-.horarios-info {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    margin-top: 70px;
-}
-
-.horario-card {
-    background-color: #5a5a5a;
-    padding: 15px 25px;
-    border-radius: 8px;
-    text-align: center;
-    min-width: 280px;
-    color: white;
-    font-size: 14px;
-}
-
-.horario-card h3 {
-    color: #00eaea;
-    font-size: 16px;
-    margin: 0 0 8px 0;
-    border-bottom: 2px solid #00eaea;
-    padding-bottom: 5px;
-}
-
-.horario-card p {
-    margin: 4px 0;
-    font-weight: 500;
-}
-
-.horario-card .time {
-    font-size: 13px;
-    color: #cccccc;
-}
-
 @keyframes fadeOut {
     from { opacity: 1; }
     to { opacity: 0; }
@@ -191,4 +106,152 @@ main {
     flex: 1;
     position: relative;
     transition: all 0.3s ease;
+}
+
+/* Estilos para la sección de actividades */
+.actividades-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 20px;
+    position: relative;
+}
+
+.actividades-header {
+    margin-bottom: 30px;
+}
+
+.actividades-btn-header {
+    width: 250px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: 1px 1px 3px black;
+}
+
+.actividades-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: 600px;
+}
+
+.actividad-card {
+    background-color: #5a5a5a;
+    padding: 20px 30px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    color: white;
+    font-size: 14px;
+}
+
+.actividad-card h3 {
+    color: #00eaea;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    border-bottom: 2px solid #00eaea;
+    padding-bottom: 8px;
+}
+
+.actividad-card p {
+    margin: 0;
+    line-height: 1.4;
+    color: #cccccc;
+}
+
+.back-btn-container {
+    margin-top: 30px;
+}
+.planes-container {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.plan-card {
+    background-color: #5a5a5a;
+    width: 250px;
+    height: auto;
+    min-height: 140px;
+    margin: 0 0 20px 0;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-shadow: 1px 1px 3px black;
+}
+
+.plan-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00c9c9;
+}
+
+.plan-card h3 {
+    color: #00eaea;
+    font-size: 16px;
+    margin: 0 0 10px 0;
+    border-bottom: 2px solid #00eaea;
+    padding-bottom: 8px;
+    font-weight: bold;
+}
+
+.plan-card p {
+    margin: 8px 0;
+    line-height: 1.4;
+    color: #cccccc;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.plan-precio {
+    color: #00eaea;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.plan-beneficios {
+    color: #ffffff;
+    font-size: 12px;
+    margin-top: 8px;
+    font-weight: normal;
+}
+
+.volver-btn {
+    width: 250px;
+    height: 50px;
+    margin: 20px 0 0 0;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: 1px 1px 3px black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.volver-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00c9c9;
 }
