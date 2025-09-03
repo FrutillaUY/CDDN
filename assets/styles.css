@@ -221,35 +221,6 @@ main {
     font-weight: normal;
 }
 
-.volver-btn {
-    width: 250px;
-    height: 50px;
-    margin: 20px 0 0 0;
-    background-size: cover;
-    background-position: center;
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    text-shadow: 1px 1px 3px black;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.volver-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px #00c9c9;
-}
-
-footer {
-    background-color: #00c9c9;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 1rem;
-    margin-top: auto;
-}
-
 .contacto-container {
     display: flex;
     flex-direction: column;
@@ -310,55 +281,71 @@ footer {
     fill: #00eaea;
 }
 
-.volver-btn {
-    margin-top: 20px;
+.sobre-nosotros-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    text-align: center;
 }
 
-main {
-        flex: 1;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 30px;
-        position: relative;
-    }
-    
-    .sobre-nosotros-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 600px;
-        text-align: center;
-    }
-    
-    .sobre-nosotros-card {
-        background-color: #5a5a5a;
-        padding: 30px;
-        border-radius: 12px;
-        border: 2px solid #00c9c9;
-        box-shadow: 0 4px 15px rgba(0, 201, 201, 0.3);
-    }
-    
-    .sobre-nosotros-card h2 {
-        color: #00eaea;
-        font-size: 28px;
-        margin-bottom: 20px;
-        border-bottom: 3px solid #00eaea;
-        padding-bottom: 10px;
-    }
-    
-    .sobre-nosotros-card p {
-        color: white;
-        font-size: 16px;
-        line-height: 1.6;
-        margin-bottom: 15px;
-        font-weight: 400;
-    }
-    
-    .volver-btn-container {
-        position: fixed;
-        bottom: 30px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 10;
-    }
+.sobre-nosotros-card {
+    background-color: #5a5a5a;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #00c9c9;
+    box-shadow: 0 4px 15px rgba(0, 201, 201, 0.3);
+}
+
+.sobre-nosotros-card h2 {
+    color: #00eaea;
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #00eaea;
+    padding-bottom: 10px;
+}
+
+.sobre-nosotros-card p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.volver-btn {
+    width: 250px;
+    height: 50px;
+    margin: 20px 0 0 0;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: 1px 1px 3px black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.volver-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00c9c9;
+}
+
+.volver-btn-container {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+footer {
+    background-color: #00c9c9;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
