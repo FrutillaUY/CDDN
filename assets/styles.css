@@ -255,3 +255,7 @@ main {
     transform: scale(1.05);
     box-shadow: 0 0 10px #00c9c9;
 }
+
+footer p {
+    color: black;
+}
