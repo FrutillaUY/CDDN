@@ -3,78 +3,67 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CDDN - Sobre Nosotros</title>
+<title>Sobre Nosotros - CDDN</title>
 <link rel="stylesheet" href="/assets/styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 <style>
-/* Estilos específicos para sobre nosotros */
-.sobre-nosotros-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-    margin: 0 auto;
-}
-
-.resumen-card {
-    background-color: #5a5a5a;
-    width: 400px;
-    padding: 25px;
-    border-radius: 8px;
-    text-align: center;
-    color: white;
-    font-size: 14px;
-    box-sizing: border-box;
-}
-
-.resumen-card h3 {
-    color: #00eaea;
-    font-size: 18px;
-    margin: 0 0 15px 0;
-    border-bottom: 2px solid #00eaea;
-    padding-bottom: 8px;
-    font-weight: bold;
-}
-
-.resumen-card p {
-    margin: 12px 0;
-    line-height: 1.5;
-    color: #cccccc;
-    font-size: 14px;
-}
-
-.volver-btn {
-    width: 250px;
-    height: 50px;
-    background-size: cover;
-    background-position: center;
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
-    color: #7effff;
-    font-weight: bold;
-    font-size: 16px;
-    text-shadow: 1px 1px 3px black;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.volver-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px #00c9c9;
-}
-
-/* Footer con mismo fondo que las cards */
-footer {
-    background-color: #5a5a5a;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: auto;
-}
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    main {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+        position: relative;
+    }
+    
+    .sobre-nosotros-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 600px;
+        text-align: center;
+    }
+    
+    .sobre-nosotros-card {
+        background-color: #5a5a5a;
+        padding: 30px;
+        border-radius: 12px;
+        border: 2px solid #00c9c9;
+        box-shadow: 0 4px 15px rgba(0, 201, 201, 0.3);
+    }
+    
+    .sobre-nosotros-card h2 {
+        color: #00eaea;
+        font-size: 28px;
+        margin-bottom: 20px;
+        border-bottom: 3px solid #00eaea;
+        padding-bottom: 10px;
+    }
+    
+    .sobre-nosotros-card p {
+        color: white;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+        font-weight: 400;
+    }
+    
+    .volver-btn-container {
+        position: fixed;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+    }
 </style>
 </head>
 <body>
@@ -85,8 +74,8 @@ footer {
         </div>
     </a>
     <nav>
-    <a href="/index.html">INICIO</a>
-    <a href="/views/sobreNosotros.html">SOBRE NOSOTROS</a>
+    <a href="index.html">INICIO</a>
+    <a href="sobre-nosotros.html">SOBRE NOSOTROS</a>
     <a href="/views/contacto.html">CONTACTO</a>
     <a href="/views/planes.html">ASOCIARSE</a>
     <a href="https://maps.app.goo.gl/Se9y4yyksf6xyDjt9">UBICACION</a>
@@ -98,21 +87,28 @@ footer {
         <img src="/components/Lado.jpg" alt="Imagen lateral">
     </div>
 
-    <div class="sobre-nosotros-container">
-        <div class="resumen-card">
-            <h3>Sobre Nosotros</h3>
+    <div class="sobre-nosotros-content">
+        <div class="sobre-nosotros-card">
+            <h2>Sobre Nosotros</h2>
+            
             <p>El Club Deportivo y de Diversión Náutica (CDDN) es una institución fundada en 1995 con la misión de promover las actividades acuáticas y el deporte náutico en nuestra comunidad.</p>
+            
             <p>Contamos con más de 25 años de experiencia ofreciendo servicios de calidad, desde escuela de canotaje hasta actividades recreativas para toda la familia.</p>
+            
             <p>Nuestras instalaciones incluyen una moderna flota de kayaks, canoas, juegos inflables acuáticos y espacios de recreación junto al agua, todo en un ambiente seguro y familiar.</p>
+            
             <p>Nos enorgullece ser un espacio donde personas de todas las edades pueden disfrutar del contacto con la naturaleza y desarrollar habilidades náuticas en un entorno profesional y amigable.</p>
         </div>
-        
-        <button class="btn volver-btn" onclick="window.location.href='index.html'" style="background-image: url('/components/volver.webp');">VOLVER AL INICIO</button>
     </div>
 
     <div class="side-img">
         <img src="/components/Lado.jpg" alt="Imagen lateral">
     </div>
 </main>
+
+<div class="volver-btn-container">
+    <button class="btn back-btn" onclick="window.location.href='index.html'" style="background-image: url('/components/volver.webp');">VOLVER AL INICIO</button>
+</div>
+
 </body>
 </html>
