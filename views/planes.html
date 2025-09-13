@@ -3,16 +3,76 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CDDN</title>
+<title>CDDN - Planes</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/assets/styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 <link rel="icon" href="/components/Logo.png" type="image/png">
+<style>
+    .plan-card-bootstrap {
+        background-color: #5a5a5a;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+        text-shadow: 1px 1px 3px black;
+        min-height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .plan-card-bootstrap:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px #00c9c9;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .plan-card-bootstrap h3 {
+        color: #00eaea;
+        font-size: 18px;
+        margin: 0 0 15px 0;
+        border-bottom: 2px solid #00eaea;
+        padding-bottom: 8px;
+        font-weight: bold;
+    }
+    
+    .plan-card-bootstrap p {
+        margin: 8px 0;
+        line-height: 1.4;
+        color: #cccccc;
+        font-size: 14px;
+        font-weight: normal;
+    }
+    
+    .plan-precio {
+        color: #00eaea;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    
+    .plan-beneficios {
+        color: #ffffff;
+        font-size: 13px;
+        margin-top: 8px;
+        font-weight: normal;
+    }
+    
+    @media (min-width: 992px) {
+        .side-img {
+            display: block !important;
+        }
+    }
+</style>
 </head>
 <body>
 <header>
-    <a href="index.html">
+    <a href="/index.html">
         <div class="logo">
         <img src="/components/Logo.png" alt="CDDN">
         </div>
@@ -26,25 +86,69 @@
     </nav>
 </header>
 
-<main>
-    <div class="side-img">
-        <img src="/components/Lado.jpg" alt="Imagen lateral">
-    </div>
+<main class="container-fluid">
+    <div class="row h-100 align-items-center justify-content-center">
+        <div class="col-lg-3 d-none d-lg-block">
+            <div class="side-img">
+                <img src="/components/Lado.jpg" alt="Imagen lateral" class="img-fluid">
+            </div>
+        </div>
 
-    <div class="planes-container">
-        <button class="plan-card" style="background-color: #5a5a5a;">PAGO MENSUAL $1.500</button>
-        <button class="plan-card" style="background-color: #5a5a5a;">ESCUELA DE CANOTAJE $2.200</button>
-        <button class="plan-card" style="background-color: #5a5a5a;">MEMBRESÍA ANUAL$15.000</button>
-        <button class="btn volver-btn" onclick="window.location.href='/index.html'" style="background-image: url('/components/volver.webp');">VOLVER</button>
-    </div>
+        <div class="col-lg-6 col-12 mx-auto">
+            <div class="container">
+               <div class="row g-3 justify-content-center">
+                    <div class="col-sm-6 col-12">
+                        <div class="card plan-card-bootstrap h-100">
+                            <div class="card-body text-center">
+                                <h3>Pago Mensual</h3>
+                                <p class="plan-precio">$1.500</p>
+                                <p class="plan-beneficios">Acceso completo a todas las instalaciones</p>
+                                <p class="plan-beneficios">Uso de kayaks y canoas</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6 col-12">
+                        <div class="card plan-card-bootstrap h-100">
+                            <div class="card-body text-center">
+                                <h3>Escuela de Canotaje</h3>
+                                <p class="plan-precio">$2.200</p>
+                                <p class="plan-beneficios">Clases especializadas</p>
+                                <p class="plan-beneficios">Instructor profesional</p>
+                            </div>
+                        </div>
+                    </div>
 
-    <div class="side-img">
-        <img src="/components/Lado.jpg" alt="Imagen lateral">
+                    <div class="col-sm-6 col-12">
+                        <div class="card plan-card-bootstrap h-100">
+                            <div class="card-body text-center">
+                                <h3>Membresía Anual</h3>
+                                <p class="plan-precio">$15.000</p>
+                                <p class="plan-beneficios">Acceso ilimitado todo el año</p>
+                                <p class="plan-beneficios">Descuentos en eventos especiales</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 d-none d-lg-block">
+            <div class="side-img">
+                <img src="/components/Lado.jpg" alt="Imagen lateral" class="img-fluid">
+            </div>
+        </div>
+        
+        <div class="back-btn-container">
+            <button class="btn back-btn" onclick="window.location.href='/index.html'" style="background-image: url('/components/volver.webp');">VOLVER</button>
+        </div>
     </div>
 </main>
 
-<footer>
+<footer class="mt-auto">
     <p>&copy; 2025 CDDN. Todos los derechos reservados.</p>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
