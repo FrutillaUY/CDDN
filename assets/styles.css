@@ -349,3 +349,243 @@ footer {
     padding: 1rem;
     margin-top: auto;
 }
+
+    .actividades-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 250px;
+        margin: 0 auto;
+        justify-items: center;
+    }
+    
+    .actividad-card {
+        background-color: #5a5a5a;
+        padding: 20px 30px;
+        border-radius: 8px;
+        text-align: center;
+        color: white;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 10px;
+    }
+    
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    nav a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+    
+    main {
+        flex-direction: column;
+        padding: 20px 15px;
+        gap: 20px;
+    }
+    
+    .side-img {
+        order: -1;
+    }
+    
+    .side-img img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .menu-buttons {
+        order: 0;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        height: 60px;
+        font-size: 16px;
+    }
+    
+    .actividades-container {
+        padding: 15px;
+    }
+    
+    .actividades-info {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .actividad-card {
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+    
+    .actividad-card h3 {
+        font-size: 16px;
+    }
+    
+    .planes-container {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .plan-card {
+        width: 100%;
+        font-size: 14px;
+        padding: 15px;
+    }
+    
+    .contacto-container {
+        gap: 20px;
+        padding: 0 15px;
+    }
+    
+    .contacto-card {
+        min-width: auto;
+        width: 100%;
+        max-width: 350px;
+        padding: 20px 25px;
+        font-size: 14px;
+    }
+    
+    .contacto-card h3 {
+        font-size: 18px;
+    }
+    
+    .contacto-info {
+        font-size: 16px;
+    }
+    
+    .sobre-nosotros-content {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    
+    .sobre-nosotros-card {
+        padding: 20px 15px;
+    }
+    
+    .sobre-nosotros-card h2 {
+        font-size: 24px;
+    }
+    
+    .sobre-nosotros-card p {
+        font-size: 14px;
+    }
+    
+    .back-btn-container,
+    .volver-btn-container {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        margin-top: 20px;
+    }
+    
+    .volver-btn,
+    .back-btn {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 15px;
+    }
+    
+    .logo img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    nav a {
+        margin: 0 5px;
+        font-size: 12px;
+    }
+    
+    main {
+        padding: 15px 10px;
+        gap: 15px;
+    }
+    
+    .side-img img {
+        height: 150px;
+    }
+    
+    .btn {
+        height: 50px;
+        font-size: 14px;
+        max-width: 280px;
+    }
+    
+    .actividades-info,
+    .planes-container,
+    .contacto-container {
+        max-width: 300px;
+    }
+    
+    .actividad-card,
+    .plan-card,
+    .contacto-card {
+        padding: 12px 15px;
+        font-size: 13px;
+    }
+    
+    .actividad-card h3,
+    .plan-card h3,
+    .contacto-card h3 {
+        font-size: 15px;
+    }
+    
+    .sobre-nosotros-card {
+        padding: 15px 10px;
+    }
+    
+    .sobre-nosotros-card h2 {
+        font-size: 20px;
+    }
+    
+    .sobre-nosotros-card p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    
+    footer {
+        padding: 0.8rem;
+        font-size: 12px;
+    }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .side-img img {
+        height: 120px;
+    }
+    
+    .actividades-container,
+    .contacto-container,
+    .planes-container {
+        gap: 15px;
+    }
+    
+    .actividad-card,
+    .plan-card,
+    .contacto-card {
+        padding: 10px 15px;
+    }
+    
+    footer {
+        padding: 0.5rem;
+    }
+}

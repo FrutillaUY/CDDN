@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CDDN - Horarios</title>
+<link rel="stylesheet" href="/assets/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="icon" href="/components/Logo.png" type="image/png">
+<style>
+    .actividades-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 250px;
+        margin: 0 auto;
+        justify-items: center;
+    }
+    
+    .actividad-card {
+        background-color: #5a5a5a;
+        padding: 20px 30px;
+        border-radius: 8px;
+        text-align: center;
+        color: white;
+        font-size: 14px;
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+<header>
+    <a href="/index.html">
+        <div class="logo">
+        <img src="/components/Logo.png" alt="CDDN">
+        </div>
+    </a>
+    <nav>
+    <a href="/index.html">INICIO</a>
+    <a href="/views/sobreNosotros.html">SOBRE NOSOTROS</a>
+    <a href="/views/contacto.html">CONTACTO</a>
+    <a href="/views/planes.html">ASOCIARSE</a>
+    <a href="https://maps.app.goo.gl/Se9y4yyksf6xyDjt9">UBICACION</a>
+    </nav>
+</header>
+
+<main>
+    <div class="side-img">
+        <img src="/components/Lado.jpg" alt="Imagen lateral">
+    </div>
+
+    <div class="actividades-container">
+        <div class="actividades-header">
+            <button class="btn actividades-btn-header" style="background-image: url('/components/horarios.webp');">HORARIOS</button>
+        </div>
+
+        <div class="actividades-info">
+            <div class="actividad-card">
+                <h3>Escuelita de Canotaje</h3>
+                <p>Lun|Mar|Mie 14:30 - 16:30</p>
+            </div>
+
+            <div class="actividad-card">
+                <h3>Entrada por el día</h3>
+                <p>Todos los dias 10:00 - 19:00</p>
+            </div>
+
+            <div class="actividad-card">
+                <h3>Juegos inflables acuáticos</h3>
+                <p>Lunes a Viernes 13:00 - 18:00</p>
+            </div>
+        </div>
+
+        <div class="back-btn-container">
+            <button class="btn back-btn" onclick="window.location.href='/index.html'" style="background-image: url('/components/volver.webp');">VOLVER</button>
+        </div>
+    </div>
+
+    <div class="side-img">
+        <img src="/components/Lado.jpg" alt="Imagen lateral">
+    </div>
+</main>
+</body>
+</html>
