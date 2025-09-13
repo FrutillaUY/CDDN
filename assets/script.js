@@ -71,17 +71,17 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="actividades-info">
                 <div class="actividad-card">
                     <h3>Escuelita de Canotaje</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipiscing elit ut condimentum sollicitudin, molestie nostra vitae porta. Lacus sed</p>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
                 </div>
 
                 <div class="actividad-card">
                     <h3>Entrada por el día</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipiscing elit ut condimentum sollicitudin, molestie nostra vitae porta. Lacus sed</p>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
                 </div>
 
                 <div class="actividad-card">
                     <h3>Juegos inflables acuáticos</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipiscing elit ut condimentum sollicitudin, molestie nostra vitae porta. Lacus sed</p>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
                 </div>
             </div>
 
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <div class="side-img">
             <img src="/components/Lado.jpg" alt="Imagen lateral">
-        </div>
+        </div>  
     `;
 
     function showActividades() {
