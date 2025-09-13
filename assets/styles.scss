@@ -1,0 +1,54 @@
+
+// 🎨 Variables
+$color-bg: #2e2e2e;
+$color-primary: #00c9c9;
+$color-secondary: #5a5a5a;
+$color-accent: #00eaea;
+$color-text: #fff;
+$color-subtext: #cccccc;
+
+$font-main: 'Fira Sans', sans-serif;
+
+$radius: 8px;
+$transition: 0.3s ease;
+
+// 🔧 Mixins
+@mixin transition($props...) {
+  transition: $props $transition;
+}
+
+@mixin card($bg: $color-secondary) {
+  background-color: $bg;
+  border-radius: $radius;
+  padding: 20px;
+  color: $color-text;
+  text-align: center;
+}
+
+// 🔘 Placeholders
+%btn-base {
+  width: 250px;
+  height: 50px;
+  color: $color-text;
+  font-weight: bold;
+  font-size: 16px;
+  background-size: cover;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  border-radius: $radius;
+  text-shadow: 1px 1px 3px black;
+  @include transition(transform, box-shadow);
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px $color-primary;
+  }
+}
+
+%card-base {
+  @include card();
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+// ... resto del SCSS completo que ya te pasé ...
